@@ -1,16 +1,12 @@
 import * as React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import {  useRoute } from "@react-navigation/native";
-import { Link ,useLocalSearchParams } from "expo-router";
-
+import { Link, useLocalSearchParams } from "expo-router";
 
 type RouteParams = {
   id: string;
 };
 
 const SubscriptionDetails = () => {
-  const route = useRoute();
-  //   const { id } =route.params as RouteParams;
   const { id } = useLocalSearchParams<{ id: string }>();
 
   return (
