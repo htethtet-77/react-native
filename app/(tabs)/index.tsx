@@ -48,8 +48,8 @@ export default function App() {
     posthog.capture(
       isExpanding ? "subscription_expanded" : "subscription_collapsed",
       {
-        subscription_name: item.name,
         subscription_id: item.id,
+        subscription_category: item.category,
       },
     );
   };
@@ -57,8 +57,8 @@ export default function App() {
   const handleCreateSubscription = (newSubscription: Subscription) => {
     addSubscription(newSubscription);
     posthog.capture("subscription_created", {
-      subscription_name: newSubscription.name,
       subscription_price: newSubscription.price,
+      subscription_currency: newSubscription.currency,
       subscription_frequency: newSubscription.frequency,
       subscription_category: newSubscription.category,
     });
