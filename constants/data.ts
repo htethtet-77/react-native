@@ -13,7 +13,7 @@ export const HOME_USER = {
 
 export const HOME_BALANCE = {
     amount: 2489.48,
-    nextRenewalDate: "2026-03-18T09:00:00.000Z",
+    nextRenewalDate: "2026-08-18T09:00:00.000Z",
 };
 
 export const UPCOMING_SUBSCRIPTIONS: UpcomingSubscription[] = [
@@ -45,6 +45,36 @@ export const UPCOMING_SUBSCRIPTIONS: UpcomingSubscription[] = [
 
 export const HOME_SUBSCRIPTIONS: Subscription[] = [
     {
+    id: "spotify",
+    icon: icons.spotify,
+    name: "Spotify",
+    plan:"Individual",
+    category:"Music",
+    paymentMethod:"Visa ending in 1234",
+    status:"active",
+    startDate:"2026-01-01T10:00:00.000Z",
+    price:5.99,
+    currency:"USD",
+    billing:"Monthly",
+    renewalDate:"2026-07-23T10:00:00.000Z",
+    color:"#1DB954"
+},
+{
+    id:"notion",
+    icon:icons.notion,
+    name:"Notion",
+    plan:"Plus",
+    category:"Productivity",
+    paymentMethod:"Visa ending in 2222",
+    status:"active",
+    startDate:"2026-01-01T10:00:00.000Z",
+    price:12,
+    currency:"USD",
+    billing:"Monthly",
+    renewalDate:"2026-07-25T10:00:00.000Z",
+    color:"#ffffff"
+},
+    {
         id: "adobe-creative-cloud",
         icon: icons.adobe,
         name: "Adobe Creative Cloud",
@@ -52,11 +82,11 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
         category: "Design",
         paymentMethod: "Visa ending in 8530",
         status: "active",
-        startDate: "2025-03-20T10:00:00.000Z",
+        startDate: "2025-07-20T10:00:00.000Z",
         price: 77.49,
         currency: "USD",
         billing: "Monthly",
-        renewalDate: "2026-03-20T10:00:00.000Z",
+        renewalDate: "2026-07-20T10:00:00.000Z",
         color: "#f5c542",
     },
     {
@@ -71,7 +101,7 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
         price: 9.99,
         currency: "USD",
         billing: "Monthly",
-        renewalDate: "2026-03-24T10:00:00.000Z",
+        renewalDate: "2026-07-24T10:00:00.000Z",
         color: "#e8def8",
     },
     {
@@ -82,11 +112,11 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
         category: "AI Tools",
         paymentMethod: "Amex ending in 1010",
         status: "paused",
-        startDate: "2025-06-27T10:00:00.000Z",
+        startDate: "2025-07-27T10:00:00.000Z",
         price: 20.0,
         currency: "USD",
         billing: "Monthly",
-        renewalDate: "2026-03-27T10:00:00.000Z",
+        renewalDate: "2026-07-27T10:00:00.000Z",
         color: "#b8d4e3",
     },
     {
@@ -97,11 +127,11 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
         category: "Design",
         paymentMethod: "Visa ending in 7784",
         status: "cancelled",
-        startDate: "2024-04-02T10:00:00.000Z",
+        startDate: "2024-07-02T10:00:00.000Z",
         price: 119.99,
         currency: "USD",
         billing: "Yearly",
-        renewalDate: "2026-04-02T10:00:00.000Z",
+        renewalDate: "2026-07-02T10:00:00.000Z",
         color: "#b8e8d0",
     },
 ];
