@@ -14,6 +14,11 @@ export default {
       ...(appJson.expo?.extra || {}),
       posthogProjectToken: process.env.EXPO_PUBLIC_POSTHOG_PROJECT_TOKEN,
       posthogHost: process.env.EXPO_PUBLIC_POSTHOG_HOST,
+      eas: {
+        "projectId": "b3b50ef8-b539-494e-a19d-33b1d8d97adb"
+      }
     },
+     
+    
   },
 };
